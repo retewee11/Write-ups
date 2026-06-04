@@ -1,40 +1,33 @@
-# Write-ups — Red Team Reporting
+# Writeups
 
-## 🧭 Índice rápido
-- [Plantillas](#plantillas)
-- [Hack The Box](#hack-the-box)
-- [TryHackMe](#tryhackme)
-- [Cheatsheets](#cheatsheets)
+Colección de resoluciones y análisis técnicos de máquinas de Hack The Box y TryHackMe.
 
----
+## Estructura del repositorio
 
-## Plantillas
-| Tipo | Propósito | Archivo |
-|---|---|---|
-| Informe Red Team | Resumen ejecutivo, riesgo, impacto y recomendaciones | [TEMPLATE-REPORT.md](TEMPLATE-REPORT.md) |
-| Write-up técnico | Pasos reproducibles, comandos y evidencias | [TEMPLATE-WRITEUP.md](TEMPLATE-WRITEUP.md) |
+* `writeups/htb/` — Máquinas y retos de Hack The Box.
+* `writeups/thm/` — Salas y desafíos de TryHackMe.
+* `templates/` — Plantillas de reportes técnicos y ejecutivos.
 
----
+## Soluciones
 
-## Hack The Box
-> Write-ups clasificados por máquina o challenge.
+### Hack The Box
 
-### Máquinas
+| Máquina | Dificultad | S.O. | Temas clave |
+| :--- | :--- | :--- | :--- |
+| [Cap](writeups/htb/cap) | Fácil | Linux | IDOR, PCAP Analysis, Capabilities |
+| [DevArea](writeups/htb/DevArea) | Medio | Linux | JWT Bypass, XXE, Capabilities |
 
+### TryHackMe
 
-### Challenges
-
+| Sala | Dificultad | S.O. | Temas clave |
+| :--- | :--- | :--- | :--- |
+| [BountyHacker](writeups/thm/BountyHacker) | Fácil | Linux | FTP Anonymous, SSH Brute Force, SUID |
 
 ---
 
-## TryHackMe
-> Write-ups clasificados por sala.
+## Plantillas de reporte
 
-### Rooms
+En el directorio [templates/](templates) se encuentran los formatos utilizados para documentar las pruebas:
 
-
----
-
-## Cheatsheets
-> Referencias rápidas y notas técnicas.
-
+* [Informe Red Team / Stakeholders](templates/informe_redteam.md): Resumen ejecutivo, impacto en negocio, matriz de riesgo y plan de mitigación.
+* [Writeup Técnico / Interno](templates/writeup_tecnico.md): Paso a paso de explotación detallada (reconocimiento, intrusión y escalada).
